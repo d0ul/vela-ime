@@ -1,0 +1,55 @@
+/* Curved text along the top of the screen (see utils/arc.js).
+   A fixed 24x26 box turning about its own centre: the engine resolves a % origin against another size, so px it is. */
+.ac { position: absolute; width: 24px; height: 26px; font-size: 20px; font-weight: bold; color: #fff; text-align: center; transform-origin: 12px 13px; }
+/* Rotation steps of 2 degrees: rp12 is 12deg, rn12 is -12deg. */
+.rp0 { transform: rotate(0deg); }
+.rp2 { transform: rotate(2deg); }
+.rn2 { transform: rotate(-2deg); }
+.rp4 { transform: rotate(4deg); }
+.rn4 { transform: rotate(-4deg); }
+.rp6 { transform: rotate(6deg); }
+.rn6 { transform: rotate(-6deg); }
+.rp8 { transform: rotate(8deg); }
+.rn8 { transform: rotate(-8deg); }
+.rp10 { transform: rotate(10deg); }
+.rn10 { transform: rotate(-10deg); }
+.rp12 { transform: rotate(12deg); }
+.rn12 { transform: rotate(-12deg); }
+.rp14 { transform: rotate(14deg); }
+.rn14 { transform: rotate(-14deg); }
+.rp16 { transform: rotate(16deg); }
+.rn16 { transform: rotate(-16deg); }
+.rp18 { transform: rotate(18deg); }
+.rn18 { transform: rotate(-18deg); }
+.rp20 { transform: rotate(20deg); }
+.rn20 { transform: rotate(-20deg); }
+.rp22 { transform: rotate(22deg); }
+.rn22 { transform: rotate(-22deg); }
+.rp24 { transform: rotate(24deg); }
+.rn24 { transform: rotate(-24deg); }
+.rp26 { transform: rotate(26deg); }
+.rn26 { transform: rotate(-26deg); }
+.rp28 { transform: rotate(28deg); }
+.rn28 { transform: rotate(-28deg); }
+.rp30 { transform: rotate(30deg); }
+.rn30 { transform: rotate(-30deg); }
+.rp32 { transform: rotate(32deg); }
+.rn32 { transform: rotate(-32deg); }
+.rp34 { transform: rotate(34deg); }
+.rn34 { transform: rotate(-34deg); }
+.rp36 { transform: rotate(36deg); }
+.rn36 { transform: rotate(-36deg); }
+.rp38 { transform: rotate(38deg); }
+.rn38 { transform: rotate(-38deg); }
+.rp40 { transform: rotate(40deg); }
+.rn40 { transform: rotate(-40deg); }
+.rp42 { transform: rotate(42deg); }
+.rn42 { transform: rotate(-42deg); }
+.rp44 { transform: rotate(44deg); }
+.rn44 { transform: rotate(-44deg); }
+.rp46 { transform: rotate(46deg); }
+.rn46 { transform: rotate(-46deg); }
+.rp48 { transform: rotate(48deg); }
+.rn48 { transform: rotate(-48deg); }
+.rp50 { transform: rotate(50deg); }
+.rn50 { transform: rotate(-50deg); }

@@ -1,0 +1,10 @@
+{
+    "name": "vela-ime",
+    "version": "0.1.0",
+    "description": "Cheonjiin (\ucc9c\uc9c0\uc778) keyboard page for Xiaomi Vela quick apps",
+    "type": "module",
+    "scripts": {
+        "test": "node tests/cheonjiin.test.mjs ${HWALJA_SRC:-../hwalja-ref/src}",
+        "icons": "node tools/icons.mjs"
+    }
+}
