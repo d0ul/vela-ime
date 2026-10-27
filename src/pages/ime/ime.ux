@@ -39,6 +39,7 @@ import { finishIme } from '../../utils/ime.js'
 import { arcText } from '../../utils/arc.js'
 
 let seq = 0 // a slow suggestion lookup must not overwrite a newer one
+const MAX_SUGGEST = 3 // a short strip: fewer chips to build and to hold in memory on a small device
 let blink = 0 // the cursor's timer id
 
 const DEL = '/common/ime/delete-40.indexed_8.png'
@@ -195,7 +196,7 @@ export default {
       return
     }
     try {
-      const words = await suggest(q, 6)
+      const words = (await suggest(q, MAX_SUGGEST)).slice(0, MAX_SUGGEST)
       if (mine !== seq) return
       this.strip = words.map((w, i) => ({ w, hi: i === 0 }))
     } catch (e) {

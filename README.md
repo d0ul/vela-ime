@@ -25,7 +25,7 @@ async onShow() {
 ```
 
 ## Suggestions
-Edit `src/utils/suggest.js` (default: none). `suggest(q, limit)` gets what was typed since the last space as key atoms; return up to `limit` words whose `atoms(word)` start with `q` (`atoms` is in `cheonjiin.js`). It may be async.
+Edit `src/utils/suggest.js` (default: none). `suggest(q, limit)` gets what was typed since the last space as key atoms; return up to `limit` words (the page asks for at most 3, once a key has been pressed) whose `atoms(word)` start with `q` (`atoms` is in `cheonjiin.js`). It may be async.
 
 ## Notes
 - An image is cropped, not scaled, to its box: show icons at their file size.
